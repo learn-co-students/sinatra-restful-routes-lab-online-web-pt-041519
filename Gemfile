@@ -11,9 +11,11 @@ gem 'require_all'
 gem 'shotgun'
 gem 'json'
 
+gem 'pry'
+
 group :test do
   gem 'rspec'
-  gem 'pry'
+
   gem 'pry-nav'
   gem 'capybara'
   gem 'rack-test'
