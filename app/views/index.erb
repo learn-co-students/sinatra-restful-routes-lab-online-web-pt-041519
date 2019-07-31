@@ -1,0 +1,12 @@
+<h1>Here's a list of all the recipes</h1>
+
+<ul>
+<% @recipes.each_with_index do |recipe, index| %>
+    <em><a href="/recipes/<%= index + 1 %>">Recipe No. <%= index + 1 %> Details:</a></em>
+    <li>Name: <%= recipe.name %></li>
+    <li>Ingredients: <%= recipe.ingredients %></li>
+    <li>Cook Time: <%= recipe.cook_time %></li><br>
+<% end %>
+</ul>
+
+<a href='/recipes/new'>Click Here</a> to create a new recipe!
