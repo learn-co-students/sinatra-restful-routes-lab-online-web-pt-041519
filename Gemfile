@@ -10,8 +10,9 @@ gem 'rake'
 gem 'require_all'
 gem 'shotgun'
 gem 'json'
+gem 'bcrypt'
 
-group :test do
+group :development do
   gem 'rspec'
   gem 'pry'
   gem 'pry-nav'
