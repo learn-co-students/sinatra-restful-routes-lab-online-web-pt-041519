@@ -1,0 +1,10 @@
+<h1>Popular Recipes</h1>
+
+
+<ol>
+    <%@recipes.each do |recipe|%>
+    <li><a href="/recipes/<%=recipe.id%>"><%=recipe.name%></a></li>
+    <%end%>
+</ol>
+<hr>
+<p><a href="/recipes/new">Write a New Recipe</a></p>
